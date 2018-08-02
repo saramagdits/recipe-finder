@@ -1,0 +1,12 @@
+<h1>Here are some recipes you can cook!</h1>
+
+<ul>
+    <% results.forEach(function(recipe){ %>
+        <li>
+            <%= recipe.title %>
+            <%= recipe.href %>
+            <%= recipe.ingredients %>
+            <img src='<%= recipe.thumbnail %>' alt='<%= recipe.title %>'>
+        </li>
+    <% }) %>
+</ul>
